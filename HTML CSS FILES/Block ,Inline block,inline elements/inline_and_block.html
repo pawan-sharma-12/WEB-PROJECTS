@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline ,Block and Inline Block elements</title>
+    <style>
+      
+        h1{
+            border: 2px solid red;
+            text-align: center;
+        }
+        p{border: 2px dashed blue;text-align: center;}
+        a{text-decoration: none;}
+    </style>
+</head>
+<body>
+    <!--  h1 and p tags are  blocks element and take full width available-->
+    <h1> Main Heading </h1>
+    <p>A paragraph</p>
+    <!-- span tag and ancher tag are inline elements and take only width requred by content inside-->
+
+     <span style="border: 2px solid cyan;">A para created by span tag</span>
+     <a style="border: 2px solid black;" href="">This is an ancher tag</a>
+    <!-- by using css display inline  block property we can display block elements in same line-->
+    <p style="display: inline-block;">p tag para (block element) but it is behaving as an inline element</p>
+</body>
+</html>

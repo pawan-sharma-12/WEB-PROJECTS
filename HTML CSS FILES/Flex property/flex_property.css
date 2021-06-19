@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    background-color: aliceblue;
+    /* Here by usin wrap if the browser size is reduced to minimum height of box then the boxes will not will not shrink futher rather they would shift to next line */
+    flex-wrap: wrap;
+    
+}
+.box{
+    height: 100px;
+    min-width: 100px;
+    float:left;
+}
+.one{
+    background-color: red;
+    /* this box will grow with double speed as compared to third one */
+    flex-grow:2;
+    flex-shrink: 1;
+    /* flex basis is used to give a base width to box and after then it will grow accordingly */
+    flex-basis: 150px;
+}
+.two{
+    background-color: blue; 
+    /* this box will grow with double speed as compared to third one also */
+    flex-grow: 2;
+    flex-basis:200px;
+      flex-shrink: 1;  
+}
+.three{
+    background: green; flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 100px;
+    /* This box will shrink with double speed when browswer size is reduced*/
+
+}

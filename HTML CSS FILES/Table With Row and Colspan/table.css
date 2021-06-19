@@ -1,0 +1,13 @@
+.tab{
+    background-color: #DFCFBE;
+    font-size: 25px;
+    width:100%;
+  
+}
+.tab th{
+    color:red;
+}
+.tab td{
+    color:blueviolet;
+    text-align: center;
+}

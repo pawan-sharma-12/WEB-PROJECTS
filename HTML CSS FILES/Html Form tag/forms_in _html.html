@@ -1,0 +1,105 @@
+<html lang="en" dir="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html form tag</title>
+    <style>
+        input{
+            width: 100%;
+            color: blue;
+            
+        }
+        td{
+            padding: 0;
+          
+        }
+        .Course{
+            width: auto;
+        }
+        .Gender{
+            width: auto;
+        }
+       
+    </style>
+    <script src="form_validation.js"></script>
+</head>
+<body>
+    <marquee behavior="" direction=""><h1 style="color:lightcoral">Registration</h1></marquee>
+    <i class="fas fa-users"></i>
+    <form action="" method="get" name="reg" onsubmit="return(validate())">
+        <fieldset>
+           
+            <legend style=" background-color:gray;">Personal info:</legend>
+            <table border="2" cellspacing="0" style="width: 50%;">
+                <caption>registration form</caption>
+                <tr>
+                    <th>name:</th><td><input type="textarea" name="Name"></td>
+                </tr>
+                <tr>
+                    <th>phone:</th><td><input type="textarea" name="Phone"></td>
+                </tr>
+                <tr>
+                    <th>dob:</th><td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>time:</th><td><input type="time"></td>
+                </tr>
+                <tr>
+                    <th>fav color:</th>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                    <th>email:</th>
+                    <td><input type="textarea" name="Email"></td>
+                </tr>
+                <tr>
+                    <th>Course:</th>
+                    <td >
+                      
+                        C<input class="Course" type="checkbox" name="c" value="c" id="c">
+                        C++<input class="Course" type="checkbox" name="c" value="c" id="c">
+                        Java<input class="Course" type="checkbox" name="c" value="c" id="c">
+                        Python<input class="Course" type="checkbox" name="c" value="c" id="c">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        male<input class="Gender" type="radio" name="gender" value="male">
+                        female <input class="Gender" type="radio" name="gender" value="female">
+                        other  <input class="Gender" type="radio" name="gender" value="other">
+                    </td>
+                </tr>
+                <tr>
+                    <th>disabled  field:</th>
+                    <td><input type="text" disabled></td>
+                </tr>
+                <tr>
+                    <th>hidden field:</th>
+                    <td><input type="text" hidden></td>
+                </tr>
+    
+                <tr>
+                    <th>password:</th><td><input type="password"></td>
+                </tr>
+                <tr>
+                   <td><input type="submit"></td>
+                   <td><input type="reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Browser Selection:</legend>
+            <label for="selBrow">Please choose your suitable browser</label>
+            <input id="selBrow" type="text" list="Browsers">
+            <datalist id="Browsers">
+                <option value="Edge"></option>
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+            </datalist>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

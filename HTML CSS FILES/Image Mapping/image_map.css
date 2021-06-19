@@ -1,0 +1,16 @@
+/*.images{
+    text-align: center;
+    margin: 80px 0px;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 20%;
+    margin: 2px 2%;
+}*/
+.images li img{
+    max-width: 100%;
+    position: fixed;
+    top: 200px;
+    left: 10px;
+}

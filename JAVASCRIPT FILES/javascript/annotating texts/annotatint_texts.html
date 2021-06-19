@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annotating Text</title>
+    <style>
+            .header{background-image: linear-gradient(blue,red);}
+            #content{max-width: 300px;border-radius: 10px;
+             border: 2px solid green ; padding: 10px 15px;
+             background-image: linear-gradient(pink,lightblue);
+             color: purple;
+            }
+            .div_button{border: 1px solid green;}
+    </style>
+    <script>
+           
+        function show_hide()
+        {
+            var elm = document.getElementById('content');
+            var displaysetting=elm.style.display;
+            var btn=document.getElementById('div_button');
+            if(displaysetting =='block')
+           {
+              //hiding the story here
+             elm.style.display='none';
+              //changing the button to show the story
+              btn.innerHTML='Show A story';
+            }
+            else
+            {
+              //show the division
+              elm.style.display='block';
+              //change button text
+              btn.innerHTML='Hide story';
+              
+            }
+            
+        }
+        function domCreation() {
+            var elm = document.createElement('div');
+            elm.setAttribute("style", "background-image:linear-gradient(lightblue,grey);");
+            elm.setAttribute("class", "item");
+            elm.innerText = "This is new created Div";
+            document.body.appendChild(elm);
+        }
+        function day_night()
+        {
+            var bdy = document.getElementById("bdy");
+            var clr = bdy.style.backgroundColor;
+            if(clr=="white")
+            bdy.setAttribute("style", "background-color:black;");
+            else
+            bdy.setAttribute("style", "background-color:white;");
+        }
+    </script>
+</head>
+<body id="bdy">
+    <div class="header">
+        <h1 style="text-align: center;">This is the main heading of the web page</h1>
+    </div>
+    <div class="main">
+        <button class="night" onclick="day_night()"> Click for night mode</button>
+        <button class="create" onclick="domCreation()">
+            Click here to create a new div element</button>
+        <div id="content">
+            <h2 style="text-align: center;">Dummy story</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni, minus odit amet quas quisquam modi officia quo incidunt hic consectetur placeat laborum sed quae nobis quam aut iusto rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta beatae cum accusamus expedita, perferendis totam fuga suscipit molestiae eveniet repudiandae illo consequuntur labore eius optio praesentium incidunt officiis, alias quisquam.</div>
+        <button id="div_button" onclick="show_hide()">Show and Hide button</button>
+    </div>
+</body>
+</html>

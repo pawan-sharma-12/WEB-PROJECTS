@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .canvas{border:1px solid green}
+    </style>
+</head>
+<body>
+    <canvas id="line" class="canvas" width="200px" height="200px"> </canvas>
+    <canvas id="circle" class="canvas" width="200px" height="200px"> </canvas>
+    <script>
+        <!-- drawing a line using javascript -->
+        var can = document.getElementById("line");
+        var ctx = can.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,200);
+        ctx.stroke();
+        
+         <!-- drawing a circle using javascript in the canvas-->
+        var can1 = document.getElementById("circle");
+        var ctx1 = can1.getContext("2d");
+        ctx1.arc(100,90,40,0,2*Math.PI);
+        ctx1.stroke();
+       
+    </script>
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear Aligment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <style>
+            *{ box-sizing: border-box;font-family: 'Mate SC', serif;}
+            .container{
+                border: 3px solid green;width: 70%;
+                margin: 40px auto;
+               
+            }
+            .item{border: 3px solid rgb(161, 102, 102);
+                margin: 12px 4px;
+                padding: 10px;background-color: rgb(221, 193, 193);}
+            #Cricket{
+                float: left;
+                width: 48%;
+            }
+            #Football{
+                float: right;
+                width: 48%;
+            }
+            #Hockey{
+                    /* float: left; */
+                    clear: both;
+                    width:100%;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;color:maroon">Some world famous outdoor games</h1>
+    <div class="container">
+        <div id="Cricket" class="item">
+            <h1>Cricket</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sequi reiciendis inventore neque ipsum perferendis labore facilis a exercitationem obcaecati cupiditate dicta, possimus, quibusdam similique eos corrupti rem, ratione maiores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fugit illo optio esse quia quis commodi aut labore nisi repudiandae fuga iusto cumque fugiat magni reiciendis laudantium quod soluta repellat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, blanditiis? Ea tempore doloribus deleniti consequuntur veritatis nisi impedit obcaecati id eaque, fugit rem iste quo, in debitis voluptate quibusdam minima.
+        </div>
+        <div id="Football" class="item">
+            <h1>Football</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem provident vitae iste, sit consequuntur rem optio maiores repellat necessitatibus reiciendis dicta magnam suscipit nobis atque id? Voluptas labore quam dicta.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos minima fugiat quae maiores quibusdam atque quaerat amet modi voluptas facilis maxime iure, odit sint molestias, reiciendis ea ratione et.
+            Lorem ipsum dolor sit amet
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet earum voluptate asperiores! Quae magnam delectus non, magni excepturi labore consectetur accusantium, numquam a, facere placeat impedit incidunt autem at animi?
+        </div>
+        <div id="Hockey" class="item">
+            <h1>Hockey</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorum alias nisi maxime. Optio beatae animi voluptatem odio alias incidunt aliquam voluptas consequatur quod, cumque dolore, repudiandae expedita sequi. Ab.
+        </div>
+    </div>
+</body>
+</html>

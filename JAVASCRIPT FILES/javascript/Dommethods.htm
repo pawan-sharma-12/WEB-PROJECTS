@@ -1,0 +1,23 @@
+<html>
+<head><title>Dom methods</title>
+</head>
+<body>
+<div id="d1">
+<p id="p1">This is a para</p>
+</div>
+<script>
+    //Accessing the div element of Html by using ID
+var division=document.getElementById("d1");
+    //Accessing the paragraph p tag  element of Html by using ID
+var para=document.getElementById("p1");
+    //creating a new h1 tag using javascript
+var newheading=document.createElement("h1");
+    //creating a node which contains a string 
+var headingtext=document.createTextNode("welcome to HTML Dom");
+    //appending a child to newly created h1 tag
+newheading.appendChild(headingtext);
+    //inserting a node befor sepcified child
+division.insertBefore(newheading,para);
+</script>
+</body>
+</html>

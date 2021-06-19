@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+    <link rel="stylesheet" href="table.css" type="text/css">
+</head>
+<body>
+    <!-- giving a heading to the program for table rowspan and colspan-->
+    <div class="head"><h1 style="text-align: center;">Table Tag with colspan and rowspan </h1></div>
+    <!--  creation of a table of employees and implementing rowspan and colspan also-->
+    <div >
+        <table class="tab" border="2" cellspacing=0>
+            <tr>
+                    <th>Sr. no.</th>
+                    <th> Name </th>
+                    <th>Address </th>
+                    <th>Phone No. </th>
+                    <th>Post</th>
+            </tr>
+            <tr>
+                <td >1</td>
+                <td>Mukesh</td>
+                <td>Kolkata</td>
+                <td>8749372373</td>
+                <td style="color:black; " rowspan="2">Managers</td>
+            </tr>
+            <tr>
+                <td >2</td>
+                <td>Imaran</td>
+                <td>New Delhi</td>
+                <td>9867429629</td>
+            </tr>
+            <tr>
+                <td >3</td>
+                <td>Jyoti</td>
+                <td>Varanasi</td>
+                <td>9374637363</td>
+                <td style="color:black;" rowspan="3">Supervisors</td>
+            </tr>
+            <tr>
+                <td >4</td>
+                <td>Jim</td>
+                <td>Mumbai</td>
+                <td>8373618736</td>
+            </tr>
+            <tr>
+                <td >5</td>
+                <td>Razia</td>
+                <td>Bhopal</td>
+                <td>9567464353</td>
+            </tr>
+            <tr>
+                <td  style="text-align: cneter; color:brown;" colspan="5">
+                This is the data of 5 currently working employees
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
